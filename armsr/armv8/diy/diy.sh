@@ -10,7 +10,6 @@ mkdir -p clone
 # clone 
 git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone --depth 1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
-git clone https://github.com/nantayo/My-Pkg clone/my-pkg
 git clone https://github.com/ophub/luci-app-amlogic --depth=1 clone/amlogic
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 --single-branch --depth=1 clone/mosdns
 git clone https://github.com/sbwml/packages_lang_golang -b 24.x --single-branch --depth=1 clone/golang
@@ -31,6 +30,7 @@ cp -rf clone/amlogic/luci-app-amlogic clone/mosdns/luci-app-mosdns clone/passwal
 cp -rf clone/golang feeds/packages/lang/
 cp -rf clone/mosdns/mosdns clone/mosdns/v2dat clone/my-pkg/haproxy clone/v2ray-geodata feeds/packages/net/
 cp -rf clone/my-pkg/luci-app-mosdns clone/my-pkg/luci-app-passwall feeds/luci/applications/
+sed -i '/luci-app-attendedsysupgrade/d' feeds/luci/collections/luci/Makefile
 
 # Clean packages
 rm -rf clone
