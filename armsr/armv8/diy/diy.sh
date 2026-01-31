@@ -24,7 +24,6 @@ rm -rf feeds/packages/lang/golang
 rm -rf feeds/packages/net/mosdns 
 rm -rf feeds/packages/net/v2ray-geodata
 
-
 # Update packages
 cp -rf clone/amlogic/luci-app-amlogic clone/mosdns/luci-app-mosdns clone/passwall/luci-app-passwall feeds/luci/applications/
 cp -rf clone/golang feeds/packages/lang/
