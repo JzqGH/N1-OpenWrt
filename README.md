@@ -5,7 +5,7 @@
 [luci-app-passwall](https://github.com/Openwrt-Passwall/openwrt-passwall)：科学上网<br>
 [luci-app-adguardhome](https://github.com/AdguardTeam/AdGuardHome/releases)：广告拦截<br>
 [luci-app-mosdns](https://github.com/sbwml/luci-app-mosdns)：DNS转发器<br>
-[luci-app-podman](https://github.com/Zerogiven-OpenWRT-Packages/luci-app-podman)：容器管理<br>
+luci-app-dockerman：Docker管理<br>
 luci-app-samba4：NAS网络共享<br>
 ***
 # 致谢
